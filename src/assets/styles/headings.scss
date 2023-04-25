@@ -1,0 +1,22 @@
+.heading {
+  color: $primary;
+  font-family: $font-heading;
+  &-1 {
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+    font-weight: bold;
+  }
+  &-2 {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+}
+
+.text {
+  color: $secodnary;
+  font-family: $font-text;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
+}
