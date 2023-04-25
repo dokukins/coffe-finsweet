@@ -10,9 +10,13 @@ import { RouterLink, RouterView } from "vue-router";
     </div>
   </header>
 
-  <main class="main">
+  <main>
     <RouterView />
   </main>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@import "@/assets/styles/_variables.scss";
+@import "@/assets/styles/global.scss";
+@import "@/assets/styles/headings.scss";
+</style>
