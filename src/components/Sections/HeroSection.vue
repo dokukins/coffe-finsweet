@@ -4,7 +4,7 @@ import BaseButton from "../Base/BaseButton.vue";
 
 <template>
   <section class="hero">
-    <div class="container">
+    <div class="container flex">
       <div class="hero__text">
         <div class="hero__main">
           <h1 class="heading heading-1">
@@ -41,13 +41,12 @@ import BaseButton from "../Base/BaseButton.vue";
 </template>
 
 <style lang="scss" scoped>
+.flex {
+  gap: 2rem;
+}
 .hero {
   margin-top: 6rem;
 
-  & .container {
-    display: flex;
-    gap: 2rem;
-  }
   &__text {
     display: flex;
     flex-direction: column;

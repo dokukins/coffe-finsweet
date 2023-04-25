@@ -2,8 +2,8 @@
   color: $primary;
   font-family: $font-heading;
   &-1 {
-    font-size: 3.5rem;
-    line-height: 4.25rem;
+    font-size: 3rem;
+    line-height: 3.625rem;
     font-weight: bold;
   }
   &-2 {
@@ -18,6 +18,11 @@
     line-height: 1.5;
     font-weight: 500;
   }
+  &-4 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
 }
 
 .text {
@@ -28,7 +33,7 @@
   line-height: 1.75;
 }
 
-.title {
+.title__text {
   font-family: $font-heading;
   color: $bg-info;
   font-weight: 400;

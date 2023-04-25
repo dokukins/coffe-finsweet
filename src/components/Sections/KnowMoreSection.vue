@@ -1,13 +1,17 @@
 <script setup>
 import BaseButton from "../Base/BaseButton.vue";
 import HighlightIcon from "../Icons/HighlightIcon.vue";
+import LineIcon from "../Icons/LineIcon.vue";
 </script>
 
 <template>
   <section class="know">
-    <div class="container">
+    <div class="container flex">
       <div class="know__text">
-        <p class="title">KNOW MORE ABOUT US</p>
+        <div class="title">
+          <p class="title__text">KNOW MORE ABOUT US</p>
+          <LineIcon />
+        </div>
         <div class="know__main">
           <h1 class="heading heading-1">
             We source sustainable & line caught Foods
@@ -73,13 +77,11 @@ import HighlightIcon from "../Icons/HighlightIcon.vue";
 </template>
 
 <style lang="scss" scoped>
+.flex {
+  gap: 6rem;
+}
 .know {
   margin: 10rem 0;
-
-  & .container {
-    display: flex;
-    gap: 6rem;
-  }
 
   &__text {
     display: flex;
