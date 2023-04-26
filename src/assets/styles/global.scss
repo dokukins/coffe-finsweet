@@ -81,3 +81,7 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+.container-quote {
+  margin-left: clamp(0px, 1300px, calc((100% - 1300px) / 2));
+}
