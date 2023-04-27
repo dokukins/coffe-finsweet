@@ -51,7 +51,6 @@ const closeModal = () => {
 <style lang="scss" scoped>
 .quote {
   margin-top: 10rem;
-  margin-bottom: 10rem;
   display: flex;
   gap: 4rem;
   background: $bg-secondary;
