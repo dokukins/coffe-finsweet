@@ -1,0 +1,8 @@
+<template>
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- define the filter #blur -->
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="2" />
+    </filter>
+  </svg>
+</template>

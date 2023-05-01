@@ -38,6 +38,7 @@ const isChecked = computed(() => {
 <style lang="scss" scoped>
 .menu__filter {
   cursor: pointer;
+  transition: color 0.2s;
   input {
     display: none;
   }
@@ -48,5 +49,6 @@ const isChecked = computed(() => {
 
 .active {
   color: $primary;
+  border-bottom: 4px solid $primary;
 }
 </style>

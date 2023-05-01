@@ -1,7 +1,14 @@
 <script setup>
-import BaseButton from "../../Base/BaseButton.vue";
-import HighlightIcon from "../../Icons/HighlightIcon.vue";
-import LineIcon from "../../Icons/LineIcon.vue";
+import { ref, useSlots } from "vue";
+import HighlightIcon from "../Icons/HighlightIcon.vue";
+import LineIcon from "../Icons/LineIcon.vue";
+
+const slots = useSlots();
+const hasButton = ref(!!slots.button);
+
+const props = defineProps({
+  images: Array,
+});
 </script>
 
 <template>
@@ -23,7 +30,7 @@ import LineIcon from "../../Icons/LineIcon.vue";
           </p>
         </div>
 
-        <div class="know__info">
+        <div class="know__info" :class="{ 'pb-5': !hasButton }">
           <div class="info__item">
             <h2 class="heading-3">
               <HighlightIcon />
@@ -59,18 +66,16 @@ import LineIcon from "../../Icons/LineIcon.vue";
           </div>
         </div>
 
-        <RouterLink to="/menu">
-          <BaseButton>View Menu</BaseButton>
-        </RouterLink>
+        <slot name="button"></slot>
       </div>
 
       <div class="know__img">
         <img
-          class="img__item-bottom"
-          src="/src/assets/know_more_1.png"
+          v-for="img in images"
+          :key="img"
+          :src="`/src/assets/${img}`"
           alt=""
         />
-        <img class="img__item-top" src="/src/assets/know_more_2.png" alt="" />
       </div>
     </div>
   </section>
@@ -110,15 +115,14 @@ import LineIcon from "../../Icons/LineIcon.vue";
     min-width: fit-content;
     display: flex;
     gap: 4rem;
-  }
-
-  .img__item {
-    object-fit: contain;
-    &-bottom {
-      align-self: flex-end;
-    }
-    &-top {
-      align-self: flex-start;
+    img {
+      object-fit: contain;
+      &:first-child {
+        align-self: flex-end;
+      }
+      &:last-child {
+        align-self: flex-start;
+      }
     }
   }
 }

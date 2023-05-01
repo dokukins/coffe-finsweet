@@ -123,7 +123,6 @@ const filteredCharts = computed(() => {
 <template>
   <section class="menu">
     <div class="container">
-      {{ selectedRadio }}
       <div class="menu__filters">
         <BaseRadioButton
           v-for="filter in filters"
