@@ -1,7 +1,7 @@
 <script setup>
-import BaseButton from "../Base/BaseButton.vue";
-import HighlightIcon from "../Icons/HighlightIcon.vue";
-import LineIcon from "../Icons/LineIcon.vue";
+import BaseButton from "../../Base/BaseButton.vue";
+import HighlightIcon from "../../Icons/HighlightIcon.vue";
+import LineIcon from "../../Icons/LineIcon.vue";
 </script>
 
 <template>
@@ -59,7 +59,7 @@ import LineIcon from "../Icons/LineIcon.vue";
           </div>
         </div>
 
-        <RouterLink to="/about">
+        <RouterLink to="/menu">
           <BaseButton>View Menu</BaseButton>
         </RouterLink>
       </div>
@@ -67,10 +67,10 @@ import LineIcon from "../Icons/LineIcon.vue";
       <div class="know__img">
         <img
           class="img__item-bottom"
-          src="../../assets/know_more_1.png"
+          src="/src/assets/know_more_1.png"
           alt=""
         />
-        <img class="img__item-top" src="../../assets/know_more_2.png" alt="" />
+        <img class="img__item-top" src="/src/assets/know_more_2.png" alt="" />
       </div>
     </div>
   </section>

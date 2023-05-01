@@ -29,32 +29,35 @@
       <p>© 2021 Finsweet | All rights reserved.</p>
       <ul class="links links-bottom">
         <li>
-          <RouterLink to="/" class="link">
+          <a href="#" class="link">
             <SocialIconFB />
-          </RouterLink>
+          </a>
         </li>
         <li>
-          <RouterLink to="/about" class="link">
+          <a href="#" class="link">
             <SocialIconTwitter />
-          </RouterLink>
+          </a>
         </li>
         <li>
-          <RouterLink to="/about" class="link">
+          <a href="#" class="link">
             <SocialIconInst />
-          </RouterLink>
+          </a>
         </li>
         <li>
-          <RouterLink to="/about" class="link">
+          <a href="#" class="link">
             <SocialIconLn />
-          </RouterLink>
+          </a>
         </li>
       </ul>
-      <RouterLink to="/about" class="side__link">Clone project -></RouterLink>
+      <RouterLink to="/about" class="side__link">
+        Clone project <span><ArrowIcon color="#ffb577" /></span>
+      </RouterLink>
     </div>
   </div>
 </template>
 
 <script setup>
+import ArrowIcon from "../Icons/ArrowIcon.vue";
 import SocialIconFB from "../Icons/SocialIconFB.vue";
 import SocialIconInst from "../Icons/SocialIconInst.vue";
 import SocialIconLn from "../Icons/SocialIconLn.vue";
@@ -114,10 +117,10 @@ import SocialIconTwitter from "../Icons/SocialIconTwitter.vue";
 }
 
 .side__link {
-  color: $info;
+  color: #fff;
   transition: all 0.2s;
   &:hover {
-    color: $primary;
+    color: $info;
   }
 }
 </style>

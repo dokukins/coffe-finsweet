@@ -1,7 +1,7 @@
 <template>
   <button class="btn">
     <slot></slot>
-    <ArrowIcon />
+    <ArrowIcon color="#000000" />
   </button>
 </template>
 

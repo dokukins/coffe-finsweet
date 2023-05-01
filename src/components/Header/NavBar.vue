@@ -8,26 +8,30 @@
         <RouterLink to="/" class="menu__link">Home</RouterLink>
       </li>
       <li class="menu__list">
-        <RouterLink to="/about" class="menu__link">Menu</RouterLink>
+        <RouterLink to="/menu" class="menu__link">Menu</RouterLink>
       </li>
       <li class="menu__list">
         <RouterLink to="/about" class="menu__link">About Us</RouterLink>
       </li>
       <li class="menu__list">
-        <RouterLink to="/about" class="menu__link">Our Story</RouterLink>
+        <RouterLink to="/story" class="menu__link">Our Story</RouterLink>
       </li>
       <li class="menu__list">
-        <RouterLink to="/about" class="menu__link">Blog</RouterLink>
+        <RouterLink to="/blog" class="menu__link">Blog</RouterLink>
       </li>
       <li class="menu__list">
-        <RouterLink to="/about" class="menu__link">Contact</RouterLink>
+        <RouterLink to="/contact" class="menu__link">Contact</RouterLink>
       </li>
     </ul>
-    <RouterLink to="/about" class="side__link">Clone project -></RouterLink>
+    <RouterLink to="/about" class="side__link">
+      Clone project <span><ArrowIcon color="#ffb577" /></span>
+    </RouterLink>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+import ArrowIcon from "../Icons/ArrowIcon.vue";
+</script>
 
 <style lang="scss" scoped>
 .nav {
@@ -51,10 +55,10 @@
 
 .side__link {
   margin-left: auto;
-  color: $info;
+  color: #fff;
   transition: all 0.2s;
   &:hover {
-    color: $primary;
+    color: $info;
   }
 }
 </style>

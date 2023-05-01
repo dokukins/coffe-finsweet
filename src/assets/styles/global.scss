@@ -46,7 +46,7 @@ body {
   font-family: $font-text;
   font-weight: 400;
   background: $bg-primary;
-  color: $secodnary;
+  color: $secondary;
   line-height: 1.5;
 }
 
@@ -84,4 +84,10 @@ body {
 
 .container-quote {
   margin-left: clamp(0px, 1300px, calc((100% - 1300px) / 2));
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from "vue-router";
     <RouterView />
   </main>
 
-  <footer>
+  <footer style="margin: auto 0 0 0">
     <TheFooter />
   </footer>
 </template>
@@ -24,8 +24,4 @@ import { RouterLink, RouterView } from "vue-router";
 @import "@/assets/styles/_variables.scss";
 @import "@/assets/styles/global.scss";
 @import "@/assets/styles/headings.scss";
-
-main {
-  min-height: 100%;
-}
 </style>

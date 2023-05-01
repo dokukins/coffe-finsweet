@@ -1,7 +1,7 @@
 <script setup>
-import BaseButton from "../Base/BaseButton.vue";
-import LineIcon from "../Icons/LineIcon.vue";
-import MenuItem from "./MenuItem.vue";
+import BaseButton from "../../Base/BaseButton.vue";
+import LineIcon from "../../Icons/LineIcon.vue";
+import MenuItem from "../MenuItem.vue";
 
 const charts = [
   {
@@ -64,7 +64,9 @@ const charts = [
           :image="`menu_image_${i + 1}.png`"
         />
       </div>
-      <BaseButton>View Menu</BaseButton>
+      <RouterLink to="/menu">
+        <BaseButton>View Menu</BaseButton>
+      </RouterLink>
     </div>
   </section>
 </template>

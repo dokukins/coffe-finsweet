@@ -1,12 +1,12 @@
 <script setup>
-import LineIcon from "../Icons/LineIcon.vue";
+import LineIcon from "../../Icons/LineIcon.vue";
 import ServeMenuItem from "./ServeMenuItem.vue";
-import MenuIconCake from "../Icons/MenuIconCake.vue";
-import MenuIconCofee from "../Icons/MenuIconCofee.vue";
-import MenuIconFood from "../Icons/MenuIconFood.vue";
-import MenuIconGrill from "../Icons/MenuIconCake.vue";
-import MenuIconSnack from "../Icons/MenuIconSnack.vue";
-import MenuIconCocktail from "../Icons/MenuIconCake.vue";
+import MenuIconCake from "../../Icons/MenuIconCake.vue";
+import MenuIconCofee from "../../Icons/MenuIconCofee.vue";
+import MenuIconFood from "../../Icons/MenuIconFood.vue";
+import MenuIconGrill from "../../Icons/MenuIconCake.vue";
+import MenuIconSnack from "../../Icons/MenuIconSnack.vue";
+import MenuIconCocktail from "../../Icons/MenuIconCake.vue";
 
 const serves = [
   {

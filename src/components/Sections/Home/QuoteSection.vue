@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
-import PlayIcon from "../Icons/PlayIcon.vue";
-import YoutubeModal from "../YoutubeModal.vue";
+import PlayIcon from "../../Icons/PlayIcon.vue";
+import YoutubeModal from "../../YoutubeModal.vue";
 
 const isModalOpen = ref(false);
 

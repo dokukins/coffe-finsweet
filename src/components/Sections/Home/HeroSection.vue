@@ -1,5 +1,5 @@
 <script setup>
-import BaseButton from "../Base/BaseButton.vue";
+import BaseButton from "../../Base/BaseButton.vue";
 </script>
 
 <template>
@@ -14,9 +14,7 @@ import BaseButton from "../Base/BaseButton.vue";
             Edit this text to make it your own. To edit, simply click directly
             on the text to start adding your own words. You can move the text.
           </p>
-          <RouterLink to="/about"
-            ><BaseButton>View Menu</BaseButton></RouterLink
-          >
+          <RouterLink to="/menu"><BaseButton>View Menu</BaseButton></RouterLink>
         </div>
         <div class="hero__info">
           <div class="info__item">
@@ -34,7 +32,7 @@ import BaseButton from "../Base/BaseButton.vue";
         </div>
       </div>
       <div class="hero__img">
-        <img src="../../assets/header.png" alt="" />
+        <img src="/src/assets/header.png" alt="" />
       </div>
     </div>
   </section>
