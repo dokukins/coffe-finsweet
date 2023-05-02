@@ -1,5 +1,4 @@
 <script setup>
-import SvgFilter from "../../Filters/SvgFilter.vue";
 const moments = [
   {
     year: 1998,
@@ -24,7 +23,6 @@ const moments = [
 ];
 </script>
 <template>
-  <SvgFilter style="display: none" />
   <section class="history">
     <div class="container">
       <div class="history__header" id="filter">
