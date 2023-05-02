@@ -38,7 +38,7 @@ import ContactMap from "./ContactMap.vue";
     flex-direction: column;
     gap: 2rem;
     div {
-      width: 50%;
+      width: 70%;
     }
   }
 

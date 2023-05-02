@@ -1,7 +1,10 @@
+<script setup>
+import ContactSection from "../components/Sections/ContactSection.vue";
+import StorySection from "../components/Sections/StorySection.vue";
+</script>
 <template>
-  <div>story</div>
+  <StorySection />
+  <ContactSection />
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped></style>
